@@ -10,7 +10,7 @@ from parsers.utils import get_date_from
 
 class HabrParser:
     habr_link = (
-        "https://habr.com/ru/users/NewTechAudit/posts/page{page_number}/"
+        "https://habr.com/ru/users/NewTechAudit/publications/articles/page{page_number}/"
     )
     article_link = "https://habr.com/ru/articles/{id}/"
     page = 1

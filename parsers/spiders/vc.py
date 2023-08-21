@@ -48,7 +48,7 @@ class VcruSpider(scrapy.Spider):
         loader.add_value("site", "VC")
         loader.add_xpath("title", "//h1//text()")
         loader.add_xpath("date", "//time[@class='time']/@title")
-        loader.add_xpath("views", "//div[@class='views']/@data-value")
+        loader.add_xpath("views", "//div[@class='post-counters']/@data-hits")
         loader.add_value("urls", response.url)
 
         title = response.xpath("//h1//text()").get().strip()

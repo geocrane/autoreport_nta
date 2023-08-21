@@ -27,7 +27,7 @@ def main():
         attachments = [filename, "data/nta_all.xlsx"]
         if need_send_news:
             attachments.append("data/news.xlsx")
-        # send_mail(attachments)
+        send_mail(attachments)
         print("Done")
     except Exception:
         send_error(f"PARSERs FAIL!!! {traceback.format_exc()}")

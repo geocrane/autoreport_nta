@@ -8,4 +8,3 @@ class VcItem(scrapy.Item):
     date = scrapy.Field(output_processor=TakeFirst())
     views = scrapy.Field(output_processor=TakeFirst())
     urls = scrapy.Field(output_processor=TakeFirst())
-

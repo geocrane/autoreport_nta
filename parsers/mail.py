@@ -7,6 +7,7 @@ from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
 from email.utils import COMMASPACE
 
+
 def send_mail(attachments):
     date = datetime.datetime.now().strftime("%d.%m.%Y %H:%M:%S")
     sender = 'geo-rnd@mail.ru'

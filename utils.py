@@ -128,7 +128,6 @@ def smart_strings_compare():
                 coef = round(cosine, 2)
                 article = corpus[index + 1]
 
-
         article_id = df_reestr[df_reestr["article_name"] == article]["id"]
         article_id_value = article_id.loc[article_id.index[0]]
 
